@@ -281,7 +281,7 @@ def encode_image_data_uri(img_path: Path) -> str:
 
 
 def render_item_markdown(md_path: Path) -> str:
-    """将单个知识点的 Markdown 渲染为 HTML（兼容纯裁剪图笔记与含 LaTeX 公式/表格的补充笔记）。"""
+    """将单个知识点的 Markdown 渲染为 HTML（兼容纯裁剪图笔记与含 LaTeX 公式/表格的文字笔记）。"""
     raw_text = md_path.read_text(encoding="utf-8")
     lines = raw_text.splitlines()
 
