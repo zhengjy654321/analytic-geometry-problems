@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 315" width="540" height="315">
+  <defs>
+    <marker id="arr1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="540" height="315" fill="#ffffff"/>
+  <!-- Axes -->
+  <line x1="36" y1="175" x2="505" y2="175" stroke="#475569" stroke-width="1.4" marker-end="url(#arr1)"/>
+  <line x1="190" y1="295" x2="190" y2="22" stroke="#475569" stroke-width="1.4" marker-end="url(#arr1)"/>
+  <text x="508" y="179" font-family="serif" font-style="italic" font-size="14" fill="#334155">x</text>
+  <text x="196" y="30" font-family="serif" font-style="italic" font-size="14" fill="#334155">y</text>
+  <text x="174" y="192" font-family="serif" font-style="italic" font-size="13" fill="#475569">O</text>
+
+  <!-- Apollonius Circle (center M=(330,175), r=112) -->
+  <circle cx="330" cy="175" r="112" fill="#eff6ff" fill-opacity="0.45" stroke="#1e3a5f" stroke-width="2.2"/>
+
+  <!-- Segments PA, PB, PM -->
+  <line x1="265.7" y1="83.3" x2="106" y2="175" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="265.7" y1="83.3" x2="274" y2="175" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="265.7" y1="83.3" x2="330" y2="175" stroke="#d97706" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- Points -->
+  <circle cx="106" cy="175" r="4" fill="#1e3a5f"/>
+  <circle cx="218" cy="175" r="3.8" fill="#0f766e"/>
+  <circle cx="274" cy="175" r="4" fill="#1e3a5f"/>
+  <circle cx="330" cy="175" r="4" fill="#d97706"/>
+  <circle cx="442" cy="175" r="3.8" fill="#0f766e"/>
+  <circle cx="265.7" cy="83.3" r="4.2" fill="#dc2626"/>
+
+  <!-- Labels -->
+  <text x="86" y="195" font-family="serif" font-size="13" fill="#1e3a5f"><tspan font-style="italic" font-weight="bold">A</tspan>(-<tspan font-style="italic">c</tspan>, 0)</text>
+  <text x="208" y="195" font-family="serif" font-style="italic" font-size="13" fill="#0f766e">P<tspan dy="3" font-size="10" font-style="normal">1</tspan></text>
+  <text x="260" y="195" font-family="serif" font-size="13" fill="#1e3a5f"><tspan font-style="italic" font-weight="bold">B</tspan>(<tspan font-style="italic">c</tspan>, 0)</text>
+  <text x="323" y="195" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#b45309">M</text>
+  <text x="447" y="195" font-family="serif" font-style="italic" font-size="13" fill="#0f766e">P<tspan dy="3" font-size="10" font-style="normal">2</tspan></text>
+  <text x="242" y="65" font-family="serif" font-size="13.5" fill="#dc2626"><tspan font-style="italic" font-weight="bold">P</tspan>(<tspan font-style="italic">x</tspan>, <tspan font-style="italic">y</tspan>)</text>
+  <text x="304" y="126" font-family="serif" font-style="italic" font-size="13" fill="#b45309">r</text>
+
+  <!-- Legend / Annotation -->
+  <rect x="24" y="18" width="148" height="62" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="34" y="37" font-family="sans-serif" font-size="11.5" font-weight="bold" fill="#1e3a5f">λ &gt; 1 示意图</text>
+  <text x="34" y="55" font-family="sans-serif" font-size="10.5" fill="#475569">P₁、P₂ 为定比内、外分点</text>
+  <text x="34" y="71" font-family="sans-serif" font-size="10.5" fill="#475569">M 为 P₁P₂ 中点（圆心）</text>
+</svg>

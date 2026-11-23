@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 275" width="540" height="275">
+  <rect width="540" height="275" fill="#ffffff"/>
+  <!-- Baseline OC -->
+  <line x1="55" y1="150" x2="415" y2="150" stroke="#94a3b8" stroke-width="1.3"/>
+  <!-- Circle O (r=28) and Circle C (r=112) -->
+  <circle cx="140" cy="150" r="28" fill="#eff6ff" fill-opacity="0.5" stroke="#1e3a5f" stroke-width="2.0"/>
+  <circle cx="280" cy="150" r="112" fill="#f0fdfa" fill-opacity="0.4" stroke="#0f766e" stroke-width="2.0"/>
+
+  <!-- External tangent line l through A(123.2,127.6) and B(212.8,60.4) -->
+  <line x1="87" y1="154.7" x2="258" y2="26.5" stroke="#dc2626" stroke-width="2.2"/>
+  <!-- Radii OA, CB and auxiliary perpendicular OF -->
+  <line x1="140" y1="150" x2="123.2" y2="127.6" stroke="#1e3a5f" stroke-width="1.8"/>
+  <line x1="280" y1="150" x2="212.8" y2="60.4" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="140" y1="150" x2="229.6" y2="82.8" stroke="#d97706" stroke-width="2.0" stroke-dasharray="6,3"/>
+  <line x1="140" y1="150" x2="280" y2="150" stroke="#1e3a5f" stroke-width="2.0"/>
+
+  <!-- Right angle marker at F(229.6, 82.8): u_FO=(-0.8, 0.6), u_FC=(0.6, 0.8), size=10 -->
+  <polyline points="221.6,88.8 227.6,96.8 235.6,90.8" fill="none" stroke="#d97706" stroke-width="1.4"/>
+
+  <!-- Points -->
+  <circle cx="140" cy="150" r="3.6" fill="#1e3a5f"/>
+  <circle cx="280" cy="150" r="3.6" fill="#0f766e"/>
+  <circle cx="123.2" cy="127.6" r="3.8" fill="#dc2626"/>
+  <circle cx="212.8" cy="60.4" r="3.8" fill="#dc2626"/>
+  <circle cx="229.6" cy="82.8" r="3.6" fill="#d97706"/>
+
+  <!-- Labels -->
+  <text x="132" y="168" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#1e3a5f">O</text>
+  <text x="275" y="168" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#0f766e">C</text>
+  <text x="108" y="122" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#dc2626">A</text>
+  <text x="200" y="52" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#dc2626">B</text>
+  <text x="237" y="84" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#b45309">F</text>
+  <text x="256" y="38" font-family="serif" font-style="italic" font-size="13" fill="#dc2626">l</text>
+
+  <!-- Callout Box -->
+  <rect x="398" y="42" width="132" height="160" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="408" y="64" font-family="sans-serif" font-size="11.5" font-weight="bold" fill="#1e3a5f">勾股构造核心</text>
+  <text x="408" y="86" font-family="sans-serif" font-size="10.2" fill="#334155">作 OF ⊥ CB 于 F</text>
+  <text x="408" y="106" font-family="sans-serif" font-size="10.2" fill="#b45309">• 四边形 OABF 为矩形</text>
+  <text x="408" y="124" font-family="sans-serif" font-size="10.2" fill="#dc2626">• |AB| = |OF|</text>
+  <text x="408" y="142" font-family="sans-serif" font-size="10.2" fill="#0f766e">• |CF| = r₂ − r₁ = 3</text>
+  <text x="408" y="160" font-family="sans-serif" font-size="10.2" fill="#1e3a5f">• |OC| = 5</text>
+  <text x="408" y="182" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#dc2626">⇒ |AB| = √(5²−3²) = 4</text>
+</svg>

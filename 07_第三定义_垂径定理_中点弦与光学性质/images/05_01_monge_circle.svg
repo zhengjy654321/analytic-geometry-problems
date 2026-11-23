@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 310" width="540" height="310">
+  <defs>
+    <marker id="arrM" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="540" height="310" fill="#ffffff"/>
+  <!-- Axes -->
+  <line x1="50" y1="155" x2="365" y2="155" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrM)"/>
+  <line x1="210" y1="292" x2="210" y2="18" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrM)"/>
+  <text x="368" y="159" font-family="serif" font-style="italic" font-size="13" fill="#475569">x</text>
+  <text x="216" y="26" font-family="serif" font-style="italic" font-size="13" fill="#475569">y</text>
+
+  <!-- Monge Circle R=116.6 -->
+  <circle cx="210" cy="155" r="116.6" fill="#fffbeb" fill-opacity="0.35" stroke="#d97706" stroke-width="2.0" stroke-dasharray="6,4"/>
+  <!-- Circumscribed rectangle (dashed gray) showing special corners (±a, ±b) -->
+  <rect x="110" y="95" width="200" height="120" fill="none" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="3,3"/>
+  <!-- Ellipse a=100, b=60 -->
+  <ellipse cx="210" cy="155" rx="100" ry="60" fill="#eff6ff" fill-opacity="0.55" stroke="#1e3a5f" stroke-width="2.2"/>
+
+  <!-- Two orthogonal tangents from P(285.0, 65.7) -->
+  <line x1="135" y1="110.4" x2="325" y2="53.8" stroke="#0f766e" stroke-width="1.9"/>
+  <line x1="276" y1="35.5" x2="330" y2="216.9" stroke="#0f766e" stroke-width="1.9"/>
+  <!-- Right angle square at P(285.0, 65.7): u1=(-0.958, 0.285), u2=(0.285, 0.958), size=11 -->
+  <polyline points="274.5,68.8 277.6,79.4 288.1,76.2" fill="none" stroke="#dc2626" stroke-width="1.4"/>
+
+  <!-- Radius OP -->
+  <line x1="210" y1="155" x2="285.0" y2="65.7" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Points -->
+  <circle cx="210" cy="155" r="3.5" fill="#1e3a5f"/>
+  <circle cx="285.0" cy="65.7" r="4.2" fill="#dc2626"/>
+  <circle cx="310" cy="95" r="3.2" fill="#64748b"/>
+
+  <!-- Labels -->
+  <text x="197" y="170" font-family="serif" font-style="italic" font-size="13" fill="#334155">O</text>
+  <text x="291" y="61" font-family="serif" font-size="13" fill="#dc2626"><tspan font-style="italic" font-weight="bold">P</tspan>(<tspan font-style="italic">x</tspan><tspan dy="3" font-size="9">0</tspan><tspan dy="-3">, </tspan><tspan font-style="italic">y</tspan><tspan dy="3" font-size="9">0</tspan><tspan dy="-3">)</tspan></text>
+  <text x="315" y="96" font-family="serif" font-size="11" fill="#64748b">(<tspan font-style="italic">a</tspan>, <tspan font-style="italic">b</tspan>)</text>
+  <text x="234" y="106" font-family="serif" font-style="italic" font-size="12.5" fill="#b45309">R</text>
+
+  <!-- Summary Card on Right -->
+  <rect x="378" y="38" width="150" height="190" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="388" y="58" font-family="sans-serif" font-size="11.5" font-weight="bold" fill="#1e3a5f">正交切线轨迹汇总</text>
+  <text x="388" y="80" font-family="sans-serif" font-size="10.2" font-weight="bold" fill="#b45309">椭圆（蒙日圆）</text>
+  <text x="388" y="95" font-family="serif" font-size="10.5" fill="#334155">x² + y² = a² + b²</text>
+  <text x="388" y="116" font-family="sans-serif" font-size="10.2" font-weight="bold" fill="#0f766e">双曲线 (a &gt; b)</text>
+  <text x="388" y="131" font-family="serif" font-size="10.5" fill="#334155">x² + y² = a² − b²</text>
+  <text x="388" y="144" font-family="sans-serif" font-size="9.2" fill="#64748b">(挖去渐近线 4 交点)</text>
+  <text x="388" y="164" font-family="sans-serif" font-size="10.2" font-weight="bold" fill="#1e3a5f">圆</text>
+  <text x="388" y="179" font-family="serif" font-size="10.5" fill="#334155">x² + y² = 2r²</text>
+  <text x="388" y="199" font-family="sans-serif" font-size="10.2" font-weight="bold" fill="#dc2626">抛物线</text>
+  <text x="388" y="214" font-family="sans-serif" font-size="10" fill="#334155">准线 x = −p/2（弦过焦点）</text>
+</svg>

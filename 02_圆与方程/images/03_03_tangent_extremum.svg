@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 290" width="540" height="290">
+  <rect width="540" height="290" fill="#ffffff"/>
+  <!-- Line l perpendicular to PC at P(355,145) -->
+  <line x1="355" y1="22" x2="355" y2="268" stroke="#64748b" stroke-width="1.8"/>
+  <text x="364" y="38" font-family="serif" font-style="italic" font-size="14" fill="#475569">l</text>
+
+  <!-- Circle C(175,145), r=80 -->
+  <circle cx="175" cy="145" r="80" fill="#eff6ff" fill-opacity="0.4" stroke="#1e3a5f" stroke-width="2.2"/>
+
+  <!-- Segments: PC, CA, CB, PA, PB, chord AB -->
+  <line x1="175" y1="145" x2="355" y2="145" stroke="#d97706" stroke-width="1.8" stroke-dasharray="6,3"/>
+  <line x1="175" y1="145" x2="210.6" y2="73.3" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="175" y1="145" x2="210.6" y2="216.7" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="355" y1="145" x2="210.6" y2="73.3" stroke="#1e3a5f" stroke-width="2.0"/>
+  <line x1="355" y1="145" x2="210.6" y2="216.7" stroke="#1e3a5f" stroke-width="2.0"/>
+  <line x1="210.6" y1="73.3" x2="210.6" y2="216.7" stroke="#dc2626" stroke-width="2.0"/>
+
+  <!-- Right angle markers at P (PC perp l), H (PC perp AB), and A (CA perp PA) -->
+  <polyline points="343,145 343,133 355,133" fill="none" stroke="#64748b" stroke-width="1.3"/>
+  <polyline points="210.6,134 221.6,134 221.6,145" fill="none" stroke="#dc2626" stroke-width="1.3"/>
+  <!-- Unit CA=(0.444,-0.896), AP=(0.896,0.444) -> square at A -->
+  <polyline points="206.2,82.3 215.1,86.7 219.6,77.8" fill="none" stroke="#0f766e" stroke-width="1.3"/>
+
+  <!-- Points -->
+  <circle cx="175" cy="145" r="4" fill="#d97706"/>
+  <circle cx="355" cy="145" r="4.2" fill="#1e3a5f"/>
+  <circle cx="210.6" cy="73.3" r="4" fill="#dc2626"/>
+  <circle cx="210.6" cy="216.7" r="4" fill="#dc2626"/>
+
+  <!-- Labels -->
+  <text x="157" y="150" font-family="serif" font-style="italic" font-weight="bold" font-size="14" fill="#b45309">C</text>
+  <text x="364" y="150" font-family="serif" font-style="italic" font-weight="bold" font-size="14" fill="#1e3a5f">P</text>
+  <text x="206" y="62" font-family="serif" font-style="italic" font-weight="bold" font-size="14" fill="#dc2626">A</text>
+  <text x="206" y="235" font-family="serif" font-style="italic" font-weight="bold" font-size="14" fill="#dc2626">B</text>
+  <text x="184" y="106" font-family="serif" font-style="italic" font-size="13" fill="#0f766e">r</text>
+
+  <!-- Callout box on right -->
+  <rect x="380" y="55" width="146" height="175" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="390" y="76" font-family="sans-serif" font-size="11.5" font-weight="bold" fill="#1e3a5f">同步最值触发</text>
+  <text x="390" y="96" font-family="sans-serif" font-size="10.5" fill="#b45309">PC ⊥ l ⇒ |PC| 最小</text>
+  <text x="390" y="116" font-family="sans-serif" font-size="10.5" fill="#1e3a5f">• 切线长 |PA| 最小</text>
+  <text x="390" y="136" font-family="sans-serif" font-size="10.5" fill="#1e3a5f">• 面积 S 最小</text>
+  <text x="390" y="156" font-family="sans-serif" font-size="10.5" fill="#0f766e">• ∠APC、∠APB 最大</text>
+  <text x="390" y="176" font-family="sans-serif" font-size="10.5" fill="#0f766e">• 圆心角 ∠ACB 最小</text>
+  <text x="390" y="196" font-family="sans-serif" font-size="10.5" fill="#dc2626">• 切点弦 |AB| 最小</text>
+  <text x="390" y="217" font-family="sans-serif" font-size="9.5" fill="#64748b">(全部由 Rt△PAC 单调性决定)</text>
+</svg>

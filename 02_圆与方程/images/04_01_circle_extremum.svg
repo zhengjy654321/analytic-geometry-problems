@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 198" width="560" height="198">
+  <rect width="560" height="198" fill="#ffffff"/>
+  <!-- Panel 1: 截距型 x+y=b -->
+  <rect x="6" y="6" width="176" height="186" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="30" y="24" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e3a5f">(1) 截距型：x + y = b</text>
+  <line x1="22" y1="152" x2="170" y2="152" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="42" y1="168" x2="42" y2="36" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="102" cy="92" r="36" fill="#eff6ff" fill-opacity="0.5" stroke="#1e3a5f" stroke-width="1.8"/>
+  <circle cx="102" cy="92" r="2.8" fill="#1e3a5f"/>
+  <text x="106" y="96" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">C(3,3)</text>
+  <!-- Two parallel tangent lines slope -1 (screen slope +1): through (102±25.5, 92±25.5) -->
+  <line x1="42" y1="101" x2="152" y2="165" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="4,3"/>
+  <line x1="58" y1="38" x2="166" y2="146" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="26" y="182" font-family="sans-serif" font-size="9.8" fill="#dc2626">动直线相切时 b = 6 ± 2√2</text>
+
+  <!-- Panel 2: 距离型 (x+1)^2+y^2 -->
+  <rect x="192" y="6" width="176" height="186" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="218" y="24" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e3a5f">(2) 距离型：|PE|² + 2</text>
+  <line x1="204" y1="146" x2="358" y2="146" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="242" y1="166" x2="242" y2="36" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="302" cy="94" r="34" fill="#f0fdfa" fill-opacity="0.5" stroke="#0f766e" stroke-width="1.8"/>
+  <!-- E(-1,0) -> (222,146), C(3,3) -> (302,94), line through E and C -->
+  <line x1="222" y1="146" x2="331" y2="75" stroke="#d97706" stroke-width="1.8"/>
+  <circle cx="222" cy="146" r="3.4" fill="#dc2626"/>
+  <circle cx="302" cy="94" r="2.8" fill="#0f766e"/>
+  <text x="208" y="160" font-family="serif" font-style="italic" font-size="11" fill="#dc2626">E(-1,0)</text>
+  <text x="307" y="102" font-family="serif" font-style="italic" font-size="11" fill="#0f766e">C</text>
+  <text x="212" y="182" font-family="sans-serif" font-size="9.8" fill="#b45309">连心线截圆得 |CE| ± r</text>
+
+  <!-- Panel 3: 斜率型 y/x -->
+  <rect x="378" y="6" width="176" height="186" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="412" y="24" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e3a5f">(3) 斜率型：y / x</text>
+  <line x1="392" y1="150" x2="544" y2="150" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="414" y1="166" x2="414" y2="36" stroke="#94a3b8" stroke-width="1.2"/>
+  <circle cx="484" cy="86" r="34" fill="#fffbeb" fill-opacity="0.5" stroke="#b45309" stroke-width="1.8"/>
+  <!-- Tangents from O(414,150) to C(484,86) r=34 -->
+  <line x1="414" y1="150" x2="478" y2="38" stroke="#1e3a5f" stroke-width="1.6"/>
+  <line x1="414" y1="150" x2="538" y2="104" stroke="#1e3a5f" stroke-width="1.6"/>
+  <circle cx="414" cy="150" r="3.2" fill="#dc2626"/>
+  <circle cx="484" cy="86" r="2.8" fill="#b45309"/>
+  <text x="401" y="162" font-family="serif" font-style="italic" font-size="11" fill="#dc2626">O</text>
+  <text x="488" y="90" font-family="serif" font-style="italic" font-size="11" fill="#b45309">C</text>
+  <text x="398" y="182" font-family="sans-serif" font-size="9.8" fill="#1e3a5f">过原点两切线斜率即最值</text>
+</svg>

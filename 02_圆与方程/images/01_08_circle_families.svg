@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" width="560" height="220">
+  <rect width="560" height="220" fill="#ffffff"/>
+  <!-- Left Panel: 过直线与圆交点的圆系 C + λl = 0 (无遗漏!) -->
+  <rect x="8" y="8" width="266" height="204" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="22" y="28" font-family="sans-serif" font-size="11.5" font-weight="bold" fill="#1e3a5f">① 过线圆交点的圆系 C + λl = 0</text>
+  <!-- Common chord vertical at x=140, M=(140,78), N=(140,148) -> half-chord=35 -->
+  <!-- Circles passing through (140,78) and (140,148): center (cx, 113), r=sqrt((cx-140)^2+35^2) -->
+  <!-- C0: cx=140, r=35; C1: cx=115, r=43; C2: cx=175, r=49.5 -->
+  <circle cx="115" cy="113" r="43" fill="#eff6ff" fill-opacity="0.35" stroke="#1e3a5f" stroke-width="2.0"/>
+  <circle cx="140" cy="113" r="35" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <circle cx="175" cy="113" r="49.5" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <line x1="140" y1="44" x2="140" y2="180" stroke="#d97706" stroke-width="1.9"/>
+  <circle cx="140" cy="78" r="3.6" fill="#dc2626"/>
+  <circle cx="140" cy="148" r="3.6" fill="#dc2626"/>
+  <text x="146" y="75" font-family="serif" font-style="italic" font-weight="bold" font-size="12" fill="#dc2626">M</text>
+  <text x="146" y="160" font-family="serif" font-style="italic" font-weight="bold" font-size="12" fill="#dc2626">N</text>
+  <text x="146" y="54" font-family="serif" font-style="italic" font-size="12" fill="#b45309">l</text>
+  <text x="64" y="84" font-family="serif" font-style="italic" font-size="12" fill="#1e3a5f">C</text>
+  <text x="20" y="200" font-family="sans-serif" font-size="10" fill="#0f766e">包含过 M、N 的全部圆（无刨除，λ∈R）</text>
+
+  <!-- Right Panel: 过两圆交点的圆系 C1 + λC2 = 0 (刨除 C2，且 λ=-1 退化为根轴!) -->
+  <rect x="286" y="8" width="266" height="204" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="298" y="28" font-family="sans-serif" font-size="11.5" font-weight="bold" fill="#1e3a5f">② 过两圆交点的圆系 C₁ + λC₂ = 0</text>
+  <!-- M=(418,78), N=(418,148), half-chord=35 -->
+  <!-- C1: cx=390, r=44.8 (solid navy); C2: cx=456, r=51.7 (dashed red, EXCLUDED!); mid circle cx=418, r=35 (teal) -->
+  <circle cx="390" cy="113" r="44.8" fill="#eff6ff" fill-opacity="0.35" stroke="#1e3a5f" stroke-width="2.0"/>
+  <circle cx="456" cy="113" r="51.7" fill="none" stroke="#dc2626" stroke-width="2.0" stroke-dasharray="5,3"/>
+  <circle cx="418" cy="113" r="35" fill="none" stroke="#0f766e" stroke-width="1.5"/>
+  <!-- Radical axis (λ = -1) -->
+  <line x1="418" y1="44" x2="418" y2="180" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4,3"/>
+  <circle cx="418" cy="78" r="3.6" fill="#dc2626"/>
+  <circle cx="418" cy="148" r="3.6" fill="#dc2626"/>
+  <text x="342" y="82" font-family="serif" font-style="italic" font-size="12" fill="#1e3a5f">C₁</text>
+  <text x="488" y="72" font-family="sans-serif" font-size="9.8" font-weight="bold" fill="#dc2626">C₂(被刨除!)</text>
+  <text x="424" y="54" font-family="sans-serif" font-size="9.5" fill="#b45309">λ=−1(根轴)</text>
+  <text x="298" y="200" font-family="sans-serif" font-size="10" fill="#dc2626">λ≠−1 且不含 C₂（改用 C₁+λl=0 可全含）</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 215" width="560" height="215">
+  <rect width="560" height="215" fill="#ffffff"/>
+  <!-- 1: 90° 直径圆 -->
+  <rect x="6" y="6" width="131" height="203" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="20" y="24" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#1e3a5f">直角张角（直径圆）</text>
+  <circle cx="71" cy="108" r="42" fill="#eff6ff" fill-opacity="0.45" stroke="#1e3a5f" stroke-width="1.6" stroke-dasharray="5,3"/>
+  <line x1="29" y1="108" x2="113" y2="108" stroke="#1e3a5f" stroke-width="1.8"/>
+  <line x1="29" y1="108" x2="54" y2="70" stroke="#dc2626" stroke-width="1.6"/>
+  <line x1="113" y1="108" x2="54" y2="70" stroke="#dc2626" stroke-width="1.6"/>
+  <circle cx="54" cy="70" r="3.4" fill="#dc2626"/>
+  <text x="19" y="112" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">A</text>
+  <text x="116" y="112" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">B</text>
+  <text x="48" y="62" font-family="serif" font-style="italic" font-weight="bold" font-size="11" fill="#dc2626">P(90°)</text>
+  <text x="18" y="180" font-family="sans-serif" font-size="9.5" fill="#475569">∠APB=90° 或</text>
+  <text x="18" y="196" font-family="sans-serif" font-size="9.5" fill="#475569">PA·PB=0 ⇒ AB为直径</text>
+
+  <!-- 2: 定弦定角 -->
+  <rect x="145" y="6" width="131" height="203" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="165" y="24" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#1e3a5f">定弦定角（圆弧）</text>
+  <circle cx="210" cy="112" r="42" fill="#f0fdfa" fill-opacity="0.45" stroke="#0f766e" stroke-width="1.6" stroke-dasharray="5,3"/>
+  <line x1="174" y1="132" x2="246" y2="132" stroke="#1e3a5f" stroke-width="2.0"/>
+  <line x1="174" y1="132" x2="195" y2="73" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="246" y1="132" x2="195" y2="73" stroke="#0f766e" stroke-width="1.6"/>
+  <circle cx="195" cy="73" r="3.4" fill="#dc2626"/>
+  <text x="163" y="137" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">A</text>
+  <text x="249" y="137" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">B</text>
+  <text x="190" y="65" font-family="serif" font-style="italic" font-weight="bold" font-size="11" fill="#dc2626">P(θ)</text>
+  <text x="155" y="180" font-family="sans-serif" font-size="9.5" fill="#475569">AB定长、∠APB=θ定角</text>
+  <text x="155" y="196" font-family="sans-serif" font-size="9.5" fill="#0f766e">⇒ R = |AB| / (2sinθ)</text>
+
+  <!-- 3: 对角互补四点共圆 -->
+  <rect x="284" y="6" width="131" height="203" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="296" y="24" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#1e3a5f">对角互补（四点共圆）</text>
+  <circle cx="349" cy="108" r="42" fill="#fffbeb" fill-opacity="0.45" stroke="#b45309" stroke-width="1.6" stroke-dasharray="5,3"/>
+  <polygon points="315,84 378,78 386,128 328,144" fill="none" stroke="#1e3a5f" stroke-width="1.6"/>
+  <circle cx="315" cy="84" r="3" fill="#dc2626"/>
+  <circle cx="378" cy="78" r="3" fill="#1e3a5f"/>
+  <circle cx="386" cy="128" r="3" fill="#dc2626"/>
+  <circle cx="328" cy="144" r="3" fill="#1e3a5f"/>
+  <text x="303" y="84" font-family="serif" font-style="italic" font-size="11" fill="#dc2626">A</text>
+  <text x="382" y="76" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">B</text>
+  <text x="391" y="133" font-family="serif" font-style="italic" font-size="11" fill="#dc2626">C</text>
+  <text x="319" y="158" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">D</text>
+  <text x="294" y="180" font-family="sans-serif" font-size="9.5" fill="#475569">∠A + ∠C = 180°</text>
+  <text x="294" y="196" font-family="sans-serif" font-size="9.5" fill="#b45309">⇒ A,B,C,D 四点共圆</text>
+
+  <!-- 4: 中点距离圆 (平方和 / 数量积定值) -->
+  <rect x="423" y="6" width="131" height="203" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="435" y="24" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#1e3a5f">极化 / 中线长隐圆</text>
+  <circle cx="488" cy="108" r="42" fill="#eff6ff" fill-opacity="0.45" stroke="#1e3a5f" stroke-width="1.6" stroke-dasharray="5,3"/>
+  <line x1="464" y1="108" x2="512" y2="108" stroke="#1e3a5f" stroke-width="1.8"/>
+  <line x1="488" y1="108" x2="514" y2="75" stroke="#dc2626" stroke-width="1.8"/>
+  <circle cx="464" cy="108" r="3" fill="#1e3a5f"/>
+  <circle cx="512" cy="108" r="3" fill="#1e3a5f"/>
+  <circle cx="488" cy="108" r="3.4" fill="#d97706"/>
+  <circle cx="514" cy="75" r="3.4" fill="#dc2626"/>
+  <text x="454" y="122" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">A</text>
+  <text x="514" y="122" font-family="serif" font-style="italic" font-size="11" fill="#1e3a5f">B</text>
+  <text x="482" y="124" font-family="serif" font-style="italic" font-weight="bold" font-size="11" fill="#b45309">M</text>
+  <text x="519" y="74" font-family="serif" font-style="italic" font-weight="bold" font-size="11" fill="#dc2626">P</text>
+  <text x="433" y="180" font-family="sans-serif" font-size="9.5" fill="#475569">|PA|²+|PB|²=m 或</text>
+  <text x="433" y="196" font-family="sans-serif" font-size="9.5" fill="#dc2626">PA·PB=m ⇒ |PM|=定值</text>
+</svg>

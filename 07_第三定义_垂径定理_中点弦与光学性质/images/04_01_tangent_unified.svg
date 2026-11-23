@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 310" width="540" height="310">
+  <defs>
+    <marker id="arrT" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="540" height="310" fill="#ffffff"/>
+  <!-- Axes -->
+  <line x1="50" y1="155" x2="495" y2="155" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrT)"/>
+  <line x1="240" y1="285" x2="240" y2="22" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrT)"/>
+  <text x="498" y="159" font-family="serif" font-style="italic" font-size="13" fill="#475569">x</text>
+  <text x="246" y="30" font-family="serif" font-style="italic" font-size="13" fill="#475569">y</text>
+
+  <!-- Main Ellipse -->
+  <ellipse cx="240" cy="155" rx="125" ry="80" fill="#eff6ff" fill-opacity="0.35" stroke="#1e3a5f" stroke-width="2.2"/>
+  <!-- Companion Ellipse (scale 0.55) for Midpoint Chord intuition -->
+  <ellipse cx="240" cy="155" rx="68.8" ry="44" fill="none" stroke="#d97706" stroke-width="1.4" stroke-dasharray="5,4"/>
+
+  <!-- Tangents PA, PB from outer point P(415, 91) -->
+  <line x1="415" y1="91" x2="220" y2="72.2" stroke="#0f766e" stroke-width="1.8"/>
+  <line x1="415" y1="91" x2="340" y2="210.4" stroke="#0f766e" stroke-width="1.8"/>
+  <!-- Chord of contact AB -->
+  <line x1="258.7" y1="75.9" x2="356.0" y2="184.9" stroke="#dc2626" stroke-width="2.1"/>
+
+  <!-- Midpoint chord through M(191.4, 186.1) tangent to companion ellipse -->
+  <line x1="130" y1="146.8" x2="262" y2="231.3" stroke="#d97706" stroke-width="2.0"/>
+
+  <!-- Points -->
+  <circle cx="415" cy="91" r="4.2" fill="#0f766e"/>
+  <circle cx="258.7" cy="75.9" r="3.8" fill="#dc2626"/>
+  <circle cx="356.0" cy="184.9" r="3.8" fill="#dc2626"/>
+  <circle cx="191.4" cy="186.1" r="4.0" fill="#b45309"/>
+
+  <!-- Labels -->
+  <text x="421" y="88" font-family="serif" font-size="13" fill="#0f766e"><tspan font-style="italic" font-weight="bold">P</tspan>(<tspan font-style="italic">x</tspan><tspan dy="3" font-size="9">0</tspan><tspan dy="-3">, </tspan><tspan font-style="italic">y</tspan><tspan dy="3" font-size="9">0</tspan><tspan dy="-3">)</tspan></text>
+  <text x="252" y="66" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#dc2626">A</text>
+  <text x="364" y="191" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#dc2626">B</text>
+  <text x="171" y="201" font-family="serif" font-style="italic" font-weight="bold" font-size="13" fill="#b45309">M</text>
+
+  <!-- Legend Box -->
+  <rect x="18" y="16" width="182" height="84" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="28" y="34" font-family="sans-serif" font-size="11.5" font-weight="bold" fill="#1e3a5f">半代换统一几何直观</text>
+  <text x="28" y="52" font-family="sans-serif" font-size="10.2" fill="#0f766e">• 绿线：曲线上切线 F半=0</text>
+  <text x="28" y="68" font-family="sans-serif" font-size="10.2" fill="#dc2626">• 红线：曲线外切点弦 AB (F半=0)</text>
+  <text x="28" y="84" font-family="sans-serif" font-size="10.2" fill="#b45309">• 橙线：伴随椭圆切线即中点弦</text>
+</svg>

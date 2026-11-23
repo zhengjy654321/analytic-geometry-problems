@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 205" width="560" height="205">
+  <rect width="560" height="205" fill="#ffffff"/>
+  <!-- Panel 1: 平行直线系 -->
+  <rect x="6" y="6" width="176" height="193" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="34" y="25" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e3a5f">① 平行直线系（m≠C）</text>
+  <line x1="24" y1="90" x2="144" y2="42" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="24" y1="122" x2="156" y2="69" stroke="#1e3a5f" stroke-width="2.1"/>
+  <line x1="36" y1="150" x2="164" y2="99" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="48" y1="170" x2="168" y2="122" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="128" y="66" font-family="sans-serif" font-size="9.5" fill="#1e3a5f">原直线(m=C)</text>
+  <text x="18" y="189" font-family="sans-serif" font-size="9.5" fill="#475569">法向量 (A,B) 不变，刨除重合</text>
+
+  <!-- Panel 2: 垂直直线系 -->
+  <rect x="192" y="6" width="176" height="193" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="220" y="25" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e3a5f">② 垂直直线系（Bx−Ay+n=0）</text>
+  <!-- Original line l: slope -0.6 -->
+  <line x1="210" y1="145" x2="352" y2="60" stroke="#1e3a5f" stroke-width="2.1"/>
+  <!-- Perpendicular family lines: slope +1.67 -->
+  <line x1="224" y1="54" x2="284" y2="154" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="258" y1="46" x2="322" y2="153" stroke="#0f766e" stroke-width="1.6"/>
+  <line x1="296" y1="46" x2="352" y2="139" stroke="#0f766e" stroke-width="1.6"/>
+  <text x="334" y="62" font-family="serif" font-style="italic" font-size="12" fill="#1e3a5f">l</text>
+  <text x="206" y="189" font-family="sans-serif" font-size="9.5" fill="#475569">n₁·n₂ = AB−BA = 0，免讨斜率</text>
+
+  <!-- Panel 3: 过交点直线系 l1 + λ l2 = 0 (刨除 l2!) -->
+  <rect x="378" y="6" width="176" height="193" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="392" y="25" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e3a5f">③ 交点直线系 l₁+λl₂=0</text>
+  <!-- Intersection P(466, 108) -->
+  <!-- l1 solid navy -->
+  <line x1="398" y1="138" x2="534" y2="78" stroke="#1e3a5f" stroke-width="2.1"/>
+  <!-- l2 dashed red (EXCLUDED!) -->
+  <line x1="466" y1="42" x2="466" y2="170" stroke="#dc2626" stroke-width="2.0" stroke-dasharray="5,3"/>
+  <!-- Other lines in family -->
+  <line x1="408" y1="68" x2="524" y2="148" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="432" y1="48" x2="500" y2="168" stroke="#0f766e" stroke-width="1.4"/>
+  <line x1="396" y1="108" x2="536" y2="108" stroke="#0f766e" stroke-width="1.4"/>
+  <circle cx="466" cy="108" r="3.8" fill="#d97706"/>
+  <text x="536" y="80" font-family="serif" font-style="italic" font-size="11.5" fill="#1e3a5f">l₁</text>
+  <text x="472" y="52" font-family="sans-serif" font-size="9.8" font-weight="bold" fill="#dc2626">l₂(被刨除!)</text>
+  <text x="472" y="122" font-family="serif" font-style="italic" font-weight="bold" font-size="11.5" fill="#b45309">P</text>
+  <text x="394" y="189" font-family="sans-serif" font-size="9.5" fill="#dc2626">令 μ=1 除丢了 μ=0 的 l₂</text>
+</svg>
