@@ -875,6 +875,10 @@ BASE_CSS = r"""
     .notes-page { page: notes; break-before: page; }
     .notes-fill { height: 1px; }
 
+    /* ---------- 插入的整页 PDF（知识架构）：先留空白页，渲染后叠上原页 ---------- */
+    @page ext { margin: 0; @top-left { content: none; } @bottom-right { content: none; } }
+    .ext-page { page: ext; height: 290mm; break-after: page; }
+
     .book-body { break-before: auto; }
 """
 
@@ -1056,6 +1060,7 @@ def build_html(
       <ul class="cover-mods">{"".join(f"<li>{html.escape(m['title'])}</li>" for m in filtered_modules)}</ul>
       <div class="cover-foot">手写原稿高清图 · 补充专题文字笔记 · 自绘配图</div>
     </section>
+    {_ext_pages_html()}
     <section class="mindmap" id="mindmap">
       <h2 class="front-heading">整体思维导图</h2>
       <p class="front-note">先看全书八个模块和各自的小节，后面几页逐个模块展开到每一条。<span class="supp-key">绿色</span>的条目是补充专题或电子笔记，其余对应手写原稿。</p>
@@ -1065,6 +1070,7 @@ def build_html(
     </section>
     <section class="toc" id="toc">
       <h2 class="front-heading">目录</h2>
+      {_ext_toc_html()}
       <div class="toc-l1"><a href="#mindmap">整体思维导图</a><span class="dots"></span>{_pg("mindmap")}</div>
       {"".join(toc_rows)}
       <div class="toc-l1"><a href="#orig-index">原稿序号索引</a><span class="dots"></span>{_pg("orig-index")}</div>
@@ -1104,6 +1110,61 @@ def build_html(
 </body>
 </html>
 """
+
+
+FRONT_PDF = REPO_ROOT / "front" / "解析几何小题知识架构.pdf"
+FRONT_TITLE = "解析几何小题知识架构"
+
+
+def _ext_page_count() -> int:
+    if not FRONT_PDF.is_file():
+        return 0
+    try:
+        from pypdf import PdfReader
+    except ImportError:
+        return 0
+    return len(PdfReader(str(FRONT_PDF)).pages)
+
+
+def _ext_pages_html() -> str:
+    """封面后面给知识架构 PDF 留出同样页数的空白页，渲染完再把原页叠上去。"""
+    n = _ext_page_count()
+    if not n:
+        return ""
+    pages = "".join('<div class="ext-page"></div>' for _ in range(n))
+    return f'<section class="ext-pages" id="arch">{pages}</section>'
+
+
+def _ext_toc_html() -> str:
+    if not _ext_page_count():
+        return ""
+    return f'<div class="toc-l1"><a href="#arch">{FRONT_TITLE}</a><span class="dots"></span>{_pg("arch")}</div>'
+
+
+def overlay_front_pdf(pdf_path: Path) -> None:
+    """把 front/ 里的知识架构 PDF 逐页叠到预留的空白页上（目录页码、链接都不受影响）。"""
+    n = _ext_page_count()
+    if not n:
+        return
+    from pypdf import PdfReader, PdfWriter
+    writer = PdfWriter(clone_from=str(pdf_path))
+    start = None
+    for name, dest in (PdfReader(str(pdf_path)).named_destinations or {}).items():
+        if name.lstrip("/") == "arch":
+            start = PdfReader(str(pdf_path)).get_destination_page_number(dest)
+    if start is None:
+        print("提示：没找到知识架构的预留页，未插入", file=sys.stderr)
+        return
+    front = PdfReader(str(FRONT_PDF))
+    for i in range(n):
+        target = writer.pages[start + i]
+        src = front.pages[i]
+        sx = float(target.mediabox.width) / float(src.mediabox.width)
+        sy = float(target.mediabox.height) / float(src.mediabox.height)
+        from pypdf import Transformation
+        target.merge_transformed_page(src, Transformation().scale(sx, sy))
+    with open(pdf_path, "wb") as f:
+        writer.write(f)
 
 
 def fill_page_numbers(html_str: str, pdf_path: Path) -> str:
@@ -1199,6 +1260,7 @@ def main() -> None:
             try:
                 html_str = fill_page_numbers(html_str, out_pdf)
                 render_with_chrome(html_str, out_pdf)  # 第二遍：填好目录和索引页码
+                overlay_front_pdf(out_pdf)
             except ImportError:
                 print("提示：未安装 pypdf，目录页码留空（pip install pypdf）", file=sys.stderr)
     else:
