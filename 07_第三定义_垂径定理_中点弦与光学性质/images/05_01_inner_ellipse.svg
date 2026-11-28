@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360" font-family="sans-serif" font-size="12">
+<rect width="600" height="360" fill="#fff"/>
+<line x1="24.0" y1="185.0" x2="376.0" y2="185.0" stroke="#cbd5e1" stroke-width="1"/>
+<path d="M376.0,185.0 l-7,-3.5 v7 z" fill="#cbd5e1"/>
+<text x="372.0" y="200.0" font-style="italic" font-family="serif" fill="#64748b">x</text>
+<line x1="200.0" y1="321.0" x2="200.0" y2="33.0" stroke="#cbd5e1" stroke-width="1"/>
+<path d="M200.0,33.0 l-3.5,7 h7 z" fill="#cbd5e1"/>
+<text x="206.0" y="43.0" font-style="italic" font-family="serif" fill="#64748b">y</text>
+<ellipse cx="200.0" cy="185.0" rx="120.0" ry="80.0" fill="#eff6ff" stroke="#1e3a5f" stroke-width="2"/>
+<circle cx="200.0" cy="185.0" r="66.6" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
+<path d="M200.0,185.0 L159.9,109.6" fill="none" fill-opacity="1" stroke="#dc2626" stroke-width="1.8"/>
+<path d="M200.0,185.0 L293.8,135.1" fill="none" fill-opacity="1" stroke="#dc2626" stroke-width="1.8"/>
+<path d="M139.8,105.8 L313.9,138.9" fill="none" fill-opacity="1" stroke="#7c3aed" stroke-width="1.8"/>
+<path d="M200.0,185.0 L212.5,119.6" fill="none" fill-opacity="1" stroke="#d97706" stroke-width="1.8" stroke-dasharray="5,3"/>
+<path d="M195.3,176.2 L204.1,171.5 L208.8,180.3" fill="none" fill-opacity="1" stroke="#dc2626" stroke-width="1.1"/>
+<path d="M211.0,127.5 L218.8,129.0 L220.3,121.1" fill="none" fill-opacity="1" stroke="#d97706" stroke-width="1.1"/>
+<circle cx="159.9" cy="109.6" r="3.5" fill="#1e3a5f"/>
+<circle cx="293.8" cy="135.1" r="3.5" fill="#1e3a5f"/>
+<circle cx="212.5" cy="119.6" r="3.5" fill="#d97706"/>
+<circle cx="200.0" cy="185.0" r="3.5" fill="#334155"/>
+<text x="143.9" y="103.6" font-family="serif" font-style="italic" font-size="14" font-weight="bold" fill="#1e3a5f" text-anchor="start">A</text>
+<text x="301.8" y="135.1" font-family="serif" font-style="italic" font-size="14" font-weight="bold" fill="#1e3a5f" text-anchor="start">B</text>
+<text x="208.5" y="109.6" font-family="serif" font-style="italic" font-size="14" font-weight="bold" fill="#d97706" text-anchor="start">H</text>
+<text x="186.0" y="203.0" font-family="serif" font-style="italic" font-size="14" font-weight="bold" fill="#334155" text-anchor="start">O</text>
+<text x="166.0" y="147.3" font-family="serif" font-style="italic" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="start">m</text>
+<text x="248.9" y="174.1" font-family="serif" font-style="italic" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="start">n</text>
+<path d="M228.0,185.0 L228.0,183.9 L227.9,182.7 L227.8,181.6 L227.6,180.5 L227.4,179.3 L227.2,178.2 L226.9,177.1 L226.5,176.0 L226.1,175.0 L225.7,173.9 L225.2,172.9 L224.7,171.9" fill="none" fill-opacity="1" stroke="#7c3aed" stroke-width="1.4"/>
+<text x="235.0" y="185.3" font-family="serif" font-style="italic" font-size="13" font-weight="bold" fill="#7c3aed" text-anchor="start">θ</text>
+<rect x="392" y="22" width="200" height="160" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="402" y="42" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="start">椭圆的内准圆（a=3, b=2）</text>
+<text x="402" y="64" font-family="sans-serif" font-size="12"  fill="#334155" text-anchor="start">B(n cosθ, n sinθ)</text>
+<text x="402" y="86" font-family="sans-serif" font-size="12"  fill="#334155" text-anchor="start">A(−m sinθ, m cosθ)</text>
+<text x="402" y="108" font-family="sans-serif" font-size="12"  fill="#334155" text-anchor="start">1/m² + 1/n² = 1/a² + 1/b²</text>
+<text x="402" y="130" font-family="sans-serif" font-size="12"  fill="#334155" text-anchor="start">等面积：|AB|·r = m·n</text>
+<text x="402" y="152" font-family="sans-serif" font-size="12"  fill="#0f766e" text-anchor="start">r² = a²b²/(a²+b²)</text>
+<text x="402" y="174" font-family="sans-serif" font-size="12"  fill="#d97706" text-anchor="start">AB 始终与内准圆相切于 H</text>
+</svg>

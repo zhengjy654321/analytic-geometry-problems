@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="600" height="280" font-family="sans-serif" font-size="12">
+<rect width="600" height="280" fill="#fff"/>
+<line x1="50.0" y1="140.0" x2="378.0" y2="140.0" stroke="#cbd5e1" stroke-width="1"/>
+<path d="M378.0,140.0 l-7,-3.5 v7 z" fill="#cbd5e1"/>
+<text x="374.0" y="155.0" font-style="italic" font-family="serif" fill="#64748b">x</text>
+<line x1="210.0" y1="260.0" x2="210.0" y2="12.0" stroke="#cbd5e1" stroke-width="1"/>
+<path d="M210.0,12.0 l-3.5,7 h7 z" fill="#cbd5e1"/>
+<text x="216.0" y="22.0" font-style="italic" font-family="serif" fill="#64748b">y</text>
+<ellipse cx="210.0" cy="140.0" rx="120.0" ry="80.0" fill="#eff6ff" stroke="#1e3a5f" stroke-width="2"/>
+<circle cx="210.0" cy="140.0" r="66.6" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
+<path d="M330.0,140.0 L210.0,60.0 L90.0,140.0 L210.0,220.0 Z" fill="none" fill-opacity="1" stroke="#7c3aed" stroke-width="2"/>
+<path d="M210.0,140.0 L246.9,84.6" fill="none" fill-opacity="1" stroke="#d97706" stroke-width="1.6" stroke-dasharray="5,3"/>
+<path d="M242.5,91.3 L249.1,95.7 L253.6,89.1" fill="none" fill-opacity="1" stroke="#d97706" stroke-width="1.1"/>
+<circle cx="246.9" cy="84.6" r="3.5" fill="#d97706"/>
+<circle cx="210.0" cy="140.0" r="3.5" fill="#334155"/>
+<text x="336.0" y="132.0" font-family="serif" font-style="italic" font-size="13" font-weight="bold" fill="#7c3aed" text-anchor="start">A₁(a, 0)</text>
+<text x="216.0" y="54.0" font-family="serif" font-style="italic" font-size="13" font-weight="bold" fill="#7c3aed" text-anchor="start">B₁(0, b)</text>
+<text x="196.0" y="158.0" font-family="serif" font-style="italic" font-size="14" font-weight="bold" fill="#334155" text-anchor="start">O</text>
+<rect x="400" y="30" width="192" height="94" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="410" y="50" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e3a5f" text-anchor="start">性质 4：内切于顶点菱形</text>
+<text x="410" y="72" font-family="sans-serif" font-size="12"  fill="#334155" text-anchor="start">A₁B₁：bx + ay − ab = 0</text>
+<text x="410" y="94" font-family="sans-serif" font-size="12"  fill="#0f766e" text-anchor="start">d = ab/√(a²+b²) = r</text>
+<text x="410" y="116" font-family="sans-serif" font-size="12"  fill="#7c3aed" text-anchor="start">⇒ 菱形四边都与内准圆相切</text>
+</svg>
